@@ -9,6 +9,7 @@ void player::getexp(int exp){
     }
 }
 void player::lvlup(){
+    ++LVL;
     switch (CLASS)
     {
     case 1:
@@ -22,11 +23,13 @@ void player::lvlup(){
         break;
     
     default:
+        std::cout << "ERROR #02" << std::endl;
         break;
     }
 }
 void player::attack(){
     //@todo attack monster
+
 }
 void player::getdamage(int dmg){
     HP -= dmg;
@@ -62,6 +65,7 @@ void player::setclass(int c){
         CLASS=2;
         break;
     default:
+        std::cout << "zła klasa";
         break;
     }
 }

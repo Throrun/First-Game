@@ -1,14 +1,18 @@
+#include <iostream>
 
 class monster
 {
 private:
-    /* data */
+    int HP,DMG;
 public:
-    monster(/* args */);
+    monster(int h,int d);
     ~monster();
+    void getdamage(int d);
+    void death();
+    void attack();
 };
 
-monster::monster(/* args */)
+monster::monster(int h,int d)
 {
 }
 
