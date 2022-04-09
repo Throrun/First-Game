@@ -1,5 +1,6 @@
 #include <iostream>
-#include "gracz.h"
+#include "player.h"
+#include "monster.h"
 
 using namespace std;
 /**
@@ -7,7 +8,7 @@ using namespace std;
  */
 int main(){
 
-    cout << "Hello World1" << endl;
+    cout << "Hello World!" << endl;
     
     return 0;
 
